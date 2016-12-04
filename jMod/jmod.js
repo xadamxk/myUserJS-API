@@ -7199,12 +7199,12 @@ Modal.createModal = function(data){
 				}, data.buttons[i]);
 				var newButton = createNewElement(newButtonArgs);
 				if(newButton){
-					//if(!hasClass(newButton, 'btn'))
-						//addClass(newButton, 'brn');
 					//if(hasClasses(newButton, ['btn-default']).length <= 0){
 					if(!(/btn\-(default|primary|success|info|warning|danger)/i.test(newButton.className)))
 						addClass(newButton, 'btn-default');
-					newModalFooter.appendChild(newButton);
+					if(hasClass(newButton, 'btn'))
+						newModalFooter.appendChild(newButton);
+					
 				}
 			} catch(e){
 				//console.log('error! footer buttons: ', e);
