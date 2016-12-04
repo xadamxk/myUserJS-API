@@ -7201,10 +7201,11 @@ Modal.createModal = function(data){
 				if(newButton){
 					if(!hasClass(newButton, 'btn'))
 						addClass(newButton, 'brn');
-					//if(hasClasses(newButton, ['btn-default']).length <= 0){
+					if(hasClasses(newButton, ['btn-default']).length <= 0){
 					if(!(/btn\-(default|primary|success|info|warning|danger)/i.test(newButton.className)))
-						//addClass(newButton, 'btn-default');
+						addClass(newButton, 'btn-default');
 					newModalFooter.appendChild(newButton);
+					}
 				}
 			} catch(e){
 				//console.log('error! footer buttons: ', e);
