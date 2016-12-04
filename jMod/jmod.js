@@ -7203,7 +7203,7 @@ Modal.createModal = function(data){
 						addClass(newButton, 'brn');
 					//if(hasClasses(newButton, ['btn-default']).length <= 0){
 					if(!(/btn\-(default|primary|success|info|warning|danger)/i.test(newButton.className)))
-						addClass(newButton, 'btn-default');
+						//addClass(newButton, 'btn-default');
 					newModalFooter.appendChild(newButton);
 				}
 			} catch(e){
