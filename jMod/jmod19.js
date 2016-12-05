@@ -241,7 +241,7 @@ function(initStart, $, console, window, unsafeWindow, _undefined, undefined){
 		+"@font-face {font-family: 'Sansation';font-style: normal;font-weight: 700;src: local('Sansation Bold'), local('Sansation-Bold'), url(http://myuserjs.org/fonts/Sansation-Bold.ttf) format('ttf');}\n"
 		+"@font-face {font-family: 'Sansation';font-style: italic;font-weight: 400;src: local('Sansation Italic'), local('Sansation-Italic'), url(http://myuserjs.org/fonts/Sansation-Italic.ttf) format('ttf');}\n"
 		+"@font-face {font-family: 'Sansation';font-style: italic;font-weight: 700;src: local('Sansation Bold Italic'), local('Sansation-BoldItalic'), url(http://myuserjs.org/fonts/Sansation-BoldItalic.ttf) format('ttf');}\n",
-		defaultjModCSSURL = false ? "@import url(//test2.myuserjs.org/API/0.0.19/jMod.css);\n" : "@import url(//myuserjs.org/API/0.0.19/jMod.css);\n",
+		defaultjModCSSURL = false ? "@import url(//test2.myuserjs.org/API/0.0.19/jMod.css);\n" : "@import url(https://raw.githubusercontent.com/xadamxk/myUserJS-API/master/jMod/jmod.css);\n",
 		CurrentRunningScript = {
 			id: 'jMod',
 			config: {},
@@ -254,7 +254,7 @@ function(initStart, $, console, window, unsafeWindow, _undefined, undefined){
 		API = jMod.API = {
 			addGlyphicons: function(){
 				// Import must happen at beginning of css files
-				_css = "@import url(//myuserjs.org/API/assets/glyphicons.css);\n" + _css;
+				_css = "@import url(https://raw.githubusercontent.com/xadamxk/myUserJS-API/master/jMod/glyphicons.css);\n" + _css;
 				// Use jMod.CSS to add css if DOM is available
 				jMod.CSS = "";
 			}
