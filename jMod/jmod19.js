@@ -2974,7 +2974,7 @@ function fireClick(el, bubbles, cancelable){
 			
 			stchange: 'font-weight:bold;font-size:130%;color:blue;',
 			
-			iconStyle: 'font-size:175%;background-image:url("http://myuserjs.org/img/favicon/favicon.png");background-size:auto 75%;background-repeat: no-repeat;background-position:left center;',
+			iconStyle: 'font-size:175%;background-image:url("https://raw.githubusercontent.com/xadamxk/myUserJS-API/master/jMod/favicon.png");background-size:auto 75%;background-repeat: no-repeat;background-position:left center;',
 			
 			logDefaultStyle: '',
 			logHeaderStyle: 'font-size:175%;font-weight:300;font-family:"Sansation","Open Sans",Arial;',
@@ -8612,7 +8612,7 @@ Settings.MakeSettingsModal = function(data){
 					innerHTML: [
 						{
 							type: 'img',
-							src: 'http://myuserjs.org/img/favicon/favicon.png',
+							src: 'https://raw.githubusercontent.com/xadamxk/myUserJS-API/master/jMod/favicon.png',
 							attributes: {
 								height: '16px'
 							}
