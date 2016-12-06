@@ -254,7 +254,7 @@ function(initStart, $, console, window, unsafeWindow, _undefined, undefined){
 		API = jMod.API = {
 			addGlyphicons: function(){
 				// Import must happen at beginning of css files
-				_css = "@import url(//myuserjs.org/API/assets/glyphicons.css);\n" + _css;
+				_css = "@import url(//raw.githubusercontent.com/xadamxk/myUserJS-API/master/jMod/glyphicons.css);\n" + _css;
 				// Use jMod.CSS to add css if DOM is available
 				jMod.CSS = "";
 			}
