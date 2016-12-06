@@ -8654,6 +8654,20 @@ Settings.MakeSettingsModal = function(data){
 				EventListeners: {
 					click: function(){
 						console.log('save button click');
+						// here
+						jMod.Notification('UpdateNotification', {
+    							'version': '1.2.3', // The new version
+    							'script_name': 'foo bar', // Optional
+    							'time': '123 minutes ago',
+    							'visit': {
+								'onClick': function(e){
+									console.log('Save Button Clicked', e);
+									e.stopPropagation();
+									return false;
+								}
+    							}
+						});
+						// here
 						Settings.save();
 					}
 				}
@@ -8663,7 +8677,7 @@ Settings.MakeSettingsModal = function(data){
 			Settings.onResize();
 		},
 		style: {
-			width: "1000px",
+			width: "750px",
 			//maxHeight: "1000px",
 			//overflowY: "auto"
 		},
