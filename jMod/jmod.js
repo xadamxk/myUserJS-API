@@ -8673,7 +8673,7 @@ Settings.MakeSettingsModal = function(data){
 			Settings.onResize();
 		},
 		style: {
-			width: "850px",
+			width: "1000px",
 			//maxHeight: "1000px",
 			//overflowY: "auto"
 		},
