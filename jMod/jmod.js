@@ -8655,17 +8655,12 @@ Settings.MakeSettingsModal = function(data){
 					click: function(){
 						console.log('save button click');
 						// here
-						jMod.Notification('UpdateNotification', {
-    							'version': '1.2.3', // The new version
-    							'script_name': 'foo bar', // Optional
-    							'time': '123 minutes ago',
-    							'visit': {
-								'onClick': function(e){
-									console.log('Save Button Clicked', e);
-									e.stopPropagation();
-									return false;
-								}
-    							}
+						jMod.Notification({
+						    'title': 'Settings Saved!',
+						    'body': '<i class="fa fa-clock-o"></i> <i>Body</i>',
+						    'footer': '<a class="btn btn-danger btn-sm" href="javascript:void(0);">Close</a>', // Optional
+						    'icon': 'fa-floppy-o',
+						    'type': 'small',
 						});
 						// here
 						Settings.save();
