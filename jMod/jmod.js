@@ -8635,6 +8635,7 @@ Settings.MakeSettingsModal = function(data){
 					click: {
 						capture: false,
 						callback: function(e){
+							// Clear Settings
 							var r = confirm("Are you sure?");
 							if(r)
 								Settings.clear();
@@ -8672,7 +8673,7 @@ Settings.MakeSettingsModal = function(data){
 			Settings.onResize();
 		},
 		style: {
-			width: "750px",
+			width: "850px",
 			//maxHeight: "1000px",
 			//overflowY: "auto"
 		},
